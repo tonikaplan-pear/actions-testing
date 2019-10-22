@@ -15,7 +15,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULL_REQUEST_LABELS: automated, master to study
           PULL_REQUEST_BRANCH: master-to-study-auto
-          PULL_REQUEST_BASE: 'study'
+          BRANCH_SUFFIX: short-commit-hash
+          PULL_REQUEST_BASE: study
           COMMIT_MESSAGE: Auto merge master branch to study branch
           PULL_REQUEST_TITLE: 'Auto merge master branch to study branch'
           PULL_REQUEST_BODY: |
