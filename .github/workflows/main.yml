@@ -12,7 +12,7 @@ jobs:
         with:
           ref: study
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v1.5.3
+        uses: tonikaplan-pear/create-pull-request@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULL_REQUEST_LABELS: automated, master to study
