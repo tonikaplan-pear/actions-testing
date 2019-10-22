@@ -8,9 +8,9 @@ jobs:
   createPullRequest:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      with: 
-        ref: study
+      - uses: actions/checkout@master
+        with:
+          ref: study
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1.5.3
         env:
