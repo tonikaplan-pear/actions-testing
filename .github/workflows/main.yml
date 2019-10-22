@@ -1,4 +1,4 @@
-name: create-pull-request master to study workflow
+name: create-pull-request master to study workflow 2
 on:
   push:
     branches:
