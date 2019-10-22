@@ -1,3 +1,3 @@
 # actions-testing
 
-test v1
+test v2
