@@ -9,14 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-        with:
-          ref: study
       - name: Create Pull Request
         uses: tonikaplan-pear/create-pull-request@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULL_REQUEST_LABELS: automated, master to study
           PULL_REQUEST_BRANCH: master-to-study-auto
+          PULL_REQUEST_BASE: study
           BRANCH_SUFFIX: short-commit-hash
           COMMIT_MESSAGE: Auto merge master branch to study branch
           PULL_REQUEST_TITLE: 'Auto merge master branch to study branch'
